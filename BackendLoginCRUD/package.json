@@ -1,0 +1,17 @@
+{
+  "name": "backendloginreactnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Aplicacion.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.1",
+    "mysql2": "^3.16.0",
+    "sequelize": "^6.37.7"
+  }
+}

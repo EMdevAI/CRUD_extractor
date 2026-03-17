@@ -5,7 +5,7 @@
 -------------------
 Aplicación web full-stack que permite a los usuarios subir imágenes de tickets
 o recibos, extraer el texto de forma automática mediante OCR (Reconocimiento
-Óptico de Caracteres), guardar los resultados en una base de datos y consultarlos
+Óptico de Caracteres), guardar los resultados en forma de tablas en una base de datos y consultarlos
 o eliminarlos posteriormente. Cuenta con un sistema de registro e inicio de sesión
 de usuarios.
 

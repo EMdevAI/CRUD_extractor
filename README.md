@@ -1,8 +1,7 @@
-========================================================
-  OCR PARA TICKETS - DOCUMENTACIÓN TÉCNICA DEL PROYECTO
-========================================================
+# OCR PARA TICKETS - DOCUMENTACIÓN TÉCNICA DEL PROYECTO
 
-DESCRIPCIÓN GENERAL
+
+# DESCRIPCIÓN GENERAL
 -------------------
 Aplicación web full-stack que permite a los usuarios subir imágenes de tickets
 o recibos, extraer el texto de forma automática mediante OCR (Reconocimiento
@@ -11,11 +10,10 @@ o eliminarlos posteriormente. Cuenta con un sistema de registro e inicio de sesi
 de usuarios.
 
 
-========================================================
-STACK TECNOLÓGICO
-========================================================
 
-BACKEND
+## STACK TECNOLÓGICO
+
+### BACKEND
 -------
 - Lenguaje:       JavaScript (Node.js)
 - Framework:      Express.js
@@ -24,7 +22,7 @@ BACKEND
 - Subida de arch: Multer (middleware para manejar multipart/form-data)
 - Base de datos:  MySQL
 
-FRONTEND
+### FRONTEND
 --------
 - Lenguaje:       JavaScript (JSX)
 - Framework:      React (con ReactDOM)
@@ -32,9 +30,7 @@ FRONTEND
 - Bundler/Entry:  main.js (punto de entrada con ReactDOM.createRoot)
 
 
-========================================================
-ESTRUCTURA DE ARCHIVOS CLAVE
-========================================================
+## ESTRUCTURA DE ARCHIVOS CLAVE
 
 Aplicacion.js              -> Punto de entrada del servidor Node/Express
 config/database.js         -> Configuración de la conexión a MySQL con Sequelize
@@ -46,9 +42,7 @@ routes/extracciones.routes.js -> Rutas para consultar y eliminar extracciones
 main.js                    -> Punto de entrada de React (frontend)
 
 
-========================================================
-BASE DE DATOS
-========================================================
+## BASE DE DATOS
 
 Motor:          MySQL
 Base de datos:  crudjson
@@ -71,9 +65,7 @@ TABLAS GENERADAS AUTOMÁTICAMENTE:
   - Extractions (id, text, createdAt, updatedAt)
 
 
-========================================================
-API REST - ENDPOINTS
-========================================================
+## API REST - ENDPOINTS
 
 BASE URL: http://localhost:8080
 
@@ -122,9 +114,7 @@ BASE URL: http://localhost:8080
       500 -> Error interno
 
 
-========================================================
-SERVIDOR Y PUERTO
-========================================================
+## SERVIDOR Y PUERTO
 
 El servidor Express corre en:  http://localhost:8080
 
@@ -132,9 +122,7 @@ Los archivos estáticos del frontend (carpeta /public) son servidos
 directamente por Express mediante express.static.
 
 
-========================================================
-FLUJO GENERAL DE LA APLICACIÓN
-========================================================
+## FLUJO GENERAL DE LA APLICACIÓN
 
 1. El usuario se registra o inicia sesión desde el frontend React.
 2. Sube una imagen de un ticket a través del formulario.
@@ -144,9 +132,7 @@ FLUJO GENERAL DE LA APLICACIÓN
 6. El usuario puede consultar todas las extracciones o eliminar las que desee.
 
 
-========================================================
-DEPENDENCIAS PRINCIPALES (npm)
-========================================================
+## DEPENDENCIAS PRINCIPALES (npm)
 
   express       -> Framework web para Node.js
   sequelize     -> ORM para MySQL
@@ -158,9 +144,7 @@ DEPENDENCIAS PRINCIPALES (npm)
   bootstrap     -> Estilos CSS del frontend
 
 
-========================================================
-NOTAS ADICIONALES
-========================================================
+## NOTAS ADICIONALES
 
 - Las contraseñas se almacenan en texto plano (sin hashing). Se recomienda
   implementar bcrypt para producción.

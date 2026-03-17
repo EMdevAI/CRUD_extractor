@@ -154,5 +154,3 @@ directamente por Express mediante express.static.
   tickets en México/Latinoamérica.
 - Las imágenes subidas quedan almacenadas en la carpeta /uploads del servidor
   y no se eliminan automáticamente tras el procesamiento.
-
-========================================================

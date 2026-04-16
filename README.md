@@ -67,8 +67,6 @@ TABLAS GENERADAS AUTOMÁTICAMENTE:
 
 ## API REST - ENDPOINTS
 
-BASE URL: http://localhost:8080
-
 -- AUTENTICACIÓN (/api/auth) --
 
   POST /api/auth/register
@@ -115,8 +113,6 @@ BASE URL: http://localhost:8080
 
 
 ## SERVIDOR Y PUERTO
-
-El servidor Express corre en:  http://localhost:8080
 
 Los archivos estáticos del frontend (carpeta /public) son servidos
 directamente por Express mediante express.static.
